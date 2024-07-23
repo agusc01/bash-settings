@@ -1,12 +1,12 @@
 # Settings
 
-First step
+### First step
 
 ```
 git clone https://github.com/agusc01/programming-settings ~/.programming-settings
 ```
 
-Second step
+### Second step
 
 ```
 cd ~/.programming-settings && ./paste_all_settings.sh
@@ -20,6 +20,6 @@ cd ~/.programming-settings && ./paste_all_settings.sh
 1. .gitconfig
 1. .gitcustom (if exists)
 
-Third step
+### Third step
 
 **_ enjoy _**
