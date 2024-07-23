@@ -3,13 +3,13 @@
 ### First step
 
 ```
-git clone https://github.com/agusc01/programming-settings ~/.programming-settings
+git clone https://github.com/agusc01/bash-settings ~/.bash-settings
 ```
 
 ### Second step
 
 ```
-cd ~/.programming-settings && ./paste_all_settings.sh
+cd ~/.bash-settings && ./paste_all_settings.sh
 ```
 
 > note: paste_all_settings.sh is gonna make a .bak of the next files
