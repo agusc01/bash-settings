@@ -10,13 +10,15 @@ alias gs-s='git status -s'
 alias ga='git add'
 alias gb='git branch'
 alias gc='git clone'
+alias gco='git checkout'
 alias gct='git commit'
 alias gctm='git commit -m'
 # using a alias check .gitconfig
 alias gl='git alodag'
 alias gls='git als'
-alias gi='git info'
-alias gd='git d'
+alias gd='git dc'
+alias gdc='git dc'
+alias gdh='git dh'
 alias gamend='git amend'
 alias grsoftn='git rsoftn'
 alias grsofth='git rsofth'
@@ -24,7 +26,6 @@ alias grhardn='git rhardn'
 alias grhardh='git rhardh'
 alias gbu='git backup'
 alias gbuc='git backupcheck'
-
 
 # Navigation
 alias dk='cd ~/Desktop'
@@ -51,4 +52,4 @@ alias nrb="npm run build"
 alias nrd="npm run dev"
 alias nrs="npm run start"
 alias sbash="source ~/.bashrc"
-alias reset_bash="source ~/.bashrc"
+alias reset-bash="source ~/.bashrc"

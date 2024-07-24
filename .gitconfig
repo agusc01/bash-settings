@@ -48,7 +48,9 @@
 	# d 0 -> diff HEAD~0
 	# d 1 -> diff HEAD~1
 	# d n -> diff HEAD~n
-	d = "!f() { git diff HEAD~${1:-0}; }; f"
+	dn = "!f() { git diff HEAD~${1:-0}; }; f"
+	dh = "!f() { git diff ${1:-0} ${2:-HEAD~0}; }; f"
+	d = dn
 
 	t = tag
 	rmtag = tag -d
