@@ -35,6 +35,12 @@
   # with hash
   rhardh = "!f() {  branch_name=\"reset-hard/$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1)\";  git branch ${2:-$branch_name}  && git reset --hard ${1:-1};  };  f"
   
+	# By default its going to break the first commit
+  # with relative number
+  rmixedn = "!f() {  branch_name=\"reset-mixed/$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1)\";  git branch ${2:-$branch_name}  && git reset --mixed HEAD~${1:-1};  };  f"
+  # with hash
+  rmixedh = "!f() {  branch_name=\"reset-mixed/$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1)\";  git branch ${2:-$branch_name}  && git reset --mixed ${1:-1};  };  f"
+  
   amend = "!f() {  branch_name=\"amend/$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1)\"; git branch ${1:-$branch_name} && git commit --amend; }; f"
 
   backup = "!f() {  current_folder=$(basename \"$PWD\");  folder_name=\"backup-$current_folder-$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1)\";  $(mkdir -p ./../$folder_name);  $(cp -r .git ./../$folder_name/.git);  };  f"

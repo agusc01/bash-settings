@@ -24,6 +24,8 @@ alias grsoftn='git rsoftn'
 alias grsofth='git rsofth'
 alias grhardn='git rhardn'
 alias grhardh='git rhardh'
+alias grmixedn='git rmixedn'
+alias grmixedh='git rmixedh'
 alias gbu='git backup'
 alias gbuc='git backupcheck'
 
