@@ -13,7 +13,7 @@
 	b = branch
 	log = log --oneline --decorate
 	lodag = log --oneline --decorate --all --graph
-  ls = !"git log --oneline --all --graph --decorate --color=always --format=format:'%C(yellow)%h%C(reset)%C(yellow)%d%C(reset) %C(white)%s,%C(reset)%C(cyan) %an %ar %C(reset)' | awk '{gsub(/HEAD ->/, \"\\033[36mHEAD \\033[33m->\\033[32m\"); gsub(/origin\\/[^,)]*/, \"\\033[31m&\\033[0m\"); print}'" 
+  ls = !"git log --oneline --all --graph --decorate --color=always --format=format:'%C(yellow)%h%C(reset)%C(green)%d%C(reset) %C(white)%s,%C(reset)%C(cyan) %an %ar %C(reset)' | awk '{gsub(/HEAD ->/, \"\\033[36mHEAD \\033[33m->\\033[32m\"); gsub(/origin\\/[^,)]*/, \"\\033[31m&\\033[0m\"); print}'" 
 
 	# if there's not number, by default it'll "5"
 	alog = "!f() { git log -${1:-5}; }; f"

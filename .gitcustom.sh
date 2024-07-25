@@ -8,6 +8,7 @@ git() {
             echo -e "\nDon't forget that you can do:"
             echo -e "\t${GREEN}git backup"
             echo -e "\t${GREEN}git check-backup\n"
+            return
         elif [[ "$2" == "--soft" ]]; then
             echo -e "\n${RED}Command not available${NC}"
             echo -e "\nYou can do:\n"
@@ -16,10 +17,16 @@ git() {
             echo -e "\nDon't forget that you can do:"
             echo -e "\t${GREEN}git backup"
             echo -e "\t${GREEN}git check-backup\n"
-        else
+            return
+        elif [[ "$2" == "--mixed" ]]; then
             echo -e "\n${RED}Command not available${NC}"
             echo -e "\nYou can do:\n"
-            echo -e "\t${YELLOW}vim ~/.bashrc${NC}\n"
+            echo -e "\t${YELLOW}git rmixedh <hash>.${NC}"
+            echo -e "\t${YELLOW}git rmixedn <relative number>${NC}"
+            echo -e "\nDon't forget that you can do:"
+            echo -e "\t${GREEN}git backup"
+            echo -e "\t${GREEN}git check-backup\n"
+            return
         fi
 
     elif [[ "$1" == "commit" ]]; then
@@ -27,12 +34,10 @@ git() {
             echo -e "\n${RED}Command not available${NC}"
             echo -e "\nYou can do:\n"
             echo -e "\t${YELLOW}git amend${NC}\n"
-        else 
-        	command git "$@"
+            return
         fi
-    else
-        command git "$@"
     fi
+    command git "$@"
 }
 
 build_prompt() {
