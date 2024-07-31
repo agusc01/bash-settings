@@ -93,3 +93,6 @@
 
 [push]
 	default = current
+[gc]
+	reflogExpire = never
+	reflogExpireUnreachable = never
