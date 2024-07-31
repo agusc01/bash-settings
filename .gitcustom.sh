@@ -3,29 +3,29 @@ git() {
         if [[ "$2" == "--hard" ]]; then
             echo -e "\n${RED}Command not available${NC}"
             echo -e "\nYou can do:\n"
-            echo -e "\t${YELLOW}git rhardh <hash>.${NC}"
+            echo -e "\t${YELLOW}git rhardh <hash>${NC}"
             echo -e "\t${YELLOW}git rhardn <relative number>${NC}"
-            echo -e "\nDon't forget that you can do:"
+            echo -e "\nDon't forget that you can do:\n"
             echo -e "\t${GREEN}git backup"
-            echo -e "\t${GREEN}git check-backup\n"
+            echo -e "\t${GREEN}git backupcheck\n"
             return
         elif [[ "$2" == "--soft" ]]; then
             echo -e "\n${RED}Command not available${NC}"
             echo -e "\nYou can do:\n"
-            echo -e "\t${YELLOW}git rsofth <hash>.${NC}"
+            echo -e "\t${YELLOW}git rsofth <hash>${NC}"
             echo -e "\t${YELLOW}git rsoftn <relative number>${NC}"
-            echo -e "\nDon't forget that you can do:"
+            echo -e "\nDon't forget that you can do:\n"
             echo -e "\t${GREEN}git backup"
-            echo -e "\t${GREEN}git check-backup\n"
+            echo -e "\t${GREEN}git backupcheck\n"
             return
         elif [[ "$2" == "--mixed" ]]; then
             echo -e "\n${RED}Command not available${NC}"
             echo -e "\nYou can do:\n"
-            echo -e "\t${YELLOW}git rmixedh <hash>.${NC}"
+            echo -e "\t${YELLOW}git rmixedh <hash>${NC}"
             echo -e "\t${YELLOW}git rmixedn <relative number>${NC}"
-            echo -e "\nDon't forget that you can do:"
+            echo -e "\nDon't forget that you can do:\n"
             echo -e "\t${GREEN}git backup"
-            echo -e "\t${GREEN}git check-backup\n"
+            echo -e "\t${GREEN}git backupcheck\n"
             return
         fi
 

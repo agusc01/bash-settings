@@ -20,8 +20,6 @@
 	alodag = "!f() { git lodag -${1:-5}; }; f"
 	# use head because "git ls" is using "awk command"
 	als = "!f() { git ls | head -${1:-5}; }; f"
-
-	reset = "!f() { git backup && git check-backup && git reset  }; f"
     
 	# By default its going to break the first commit
 	# wiht relative number
