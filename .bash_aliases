@@ -41,6 +41,7 @@ alias workflow='cd ~/Documents/workflow'
 alias wwwlocal='cd /c/xampp/htdocs/wwwlocal'
 alias ..='cd ..'
 alias ...='cd ../..'
+alias open='explorer'
 
 # System
 alias df='df -h'
