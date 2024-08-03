@@ -11,6 +11,7 @@ alias ga='git add'
 alias gb='git branch'
 alias gc='git clone'
 alias gco='git checkout'
+alias gcob='git checkout -b'
 alias gct='git commit'
 alias gctm='git commit -m'
 # using a alias check .gitconfig
