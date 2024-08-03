@@ -58,6 +58,8 @@
 	dn = "!f() { git diff HEAD~${1:-0}; }; f"
 	dh = "!f() { git diff ${1:-0} ${2:-HEAD~0}; }; f"
 	d = dn
+	
+	me = "!f() { git merge \"$@\" --edit  ; }; f"
 
 	t = tag
 	rmtag = tag -d
@@ -97,3 +99,6 @@
 [gc]
 	reflogExpire = never
 	reflogExpireUnreachable = never
+[merge]
+	log = true
+	edit = true

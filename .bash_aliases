@@ -29,6 +29,7 @@ alias grmixedn='git rmixedn'
 alias grmixedh='git rmixedh'
 alias gbu='git backup'
 alias gbuc='git backupcheck'
+alias gme='git me'
 
 # Navigation
 alias dk='cd ~/Desktop'
