@@ -66,6 +66,14 @@
 	deletetag = tag -d
 	ct = commit
 	ctm = commit -m
+	st = stash
+	stl = stash list
+	sta = stash apply
+	stm = stash save
+	sts = stash save
+	# no drop
+	stp = stash pop
+
 
 	bis = bisect start
 	bib = bisect bad

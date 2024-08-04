@@ -29,14 +29,32 @@ git() {
             return
         fi
 
-    elif [[ "$1" == "commit" ]]; then
+    elif [[ "$1" == "commit" || "$1" == "ct" ]]; then
         if [[ "$2" == "--amend" ]]; then
             echo -e "\n${RED}Command not available${NC}"
             echo -e "\nYou can do:\n"
             echo -e "\t${YELLOW}git amend${NC}\n"
             return
         fi
+
+    elif [[ "$1" == "stash" || "$1" == "st" ]]; then
+        if [[ "$2" == "clear" ]]; then
+            echo -e "\n${RED}Command not available${NC}"
+            echo -e "\nYou can do:\n"
+            echo -e "\t${YELLOW}git clear-confirmed{NC}\n"
+            return
+        elif [[ "$2" == "-m" ]]; then
+            echo -e "\n\t${GREEN}Using .gitcustom.sh {NC}\n\n"
+            hash=$(git log --oneline -1 | cut -d ' ' -f 1)
+            command git stash save "($hash) $3"
+            return
+        elif [[ "$2" == "save" ]]; then
+            hash=$(git log --oneline -1 | cut -d ' ' -f 1)
+            command git stash save "($hash) $3"
+        fi
+
     fi
+
     command git "$@"
 }
 

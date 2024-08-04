@@ -14,6 +14,13 @@ alias gco='git checkout'
 alias gcob='git checkout -b'
 alias gct='git commit'
 alias gctm='git commit -m'
+alias gst='git stash'
+alias gstl='git stash list'
+alias gstm='git stash save'
+alias gsts='git stash save'
+alias gsta='git stash apply'
+# no drop
+alias gstp='git stash pop'
 # using a alias check .gitconfig
 alias gl='git alodag'
 alias gls='git als'
